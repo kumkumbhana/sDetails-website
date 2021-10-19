@@ -1,0 +1,192 @@
+*{
+   box-sizing: border-box;
+    font-family: serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+/*header css*/
+header{
+    padding: 50px;
+    text-align: center;
+    color: #edf1f2;
+    background-color:rgb(17 143 158);
+    /* greenish background*/
+}
+header h1{
+    font-size: 40px;
+}
+
+
+/*all section css*/
+section{
+    text-align: center;
+    padding-top: 40px;
+    
+}
+section:nth-child(even){
+    background-color:#ececec;
+    
+}
+/*h2 css*/
+h2{
+    padding-bottom: 40px;
+}
+
+/*iframe css*/
+iframe{
+    padding: 10px;
+    width: 100%;
+    height:350px;
+}
+
+/*sticky navbar in top
+.navbar{
+    position:sticky;
+    top: 0%;
+}*/
+
+/*h2 span css*/
+section h2 span{
+    background: rgb(63,94,251);    /* copy the css gradiant sight*/
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);  
+    border-radius:20px ;
+    padding:10px 20px ;
+    color: white;
+}
+
+/*carousel css*/
+.carousel-cell {
+    width: 66%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.carousel {
+  background: #EEE;
+}
+
+
+/*about css*/
+.profile-img{
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.profile-name{
+    font-size: 2em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    margin: 20px 0px 30px 0px;
+}
+.sm-handle a{
+    background-color: rgb(125 125 125 / 25%);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+.sm-handle a i{
+    margin: 5px;
+}
+.sm-handle a:hover{
+    background-color: rgb(30 30 30 / 25%);
+}
+.yt-handle{                    /* search youtube color code and copy and paste here*/
+    color: #FF0000;
+}
+.te-handle{                 /* search telegram color code and copy and paste here*/
+    color: #0088cc;
+}
+.web{                      /* search orange color code and copy and paste here*/
+    color: #FFA500;
+}
+h4{
+    font-size: 1em;
+    padding: 0px 10px;
+    color: #1c1a3a;
+    font-weight: 900;
+    padding-bottom: 10px 0px 20px 0px ;
+}
+section h4{
+    margin: 0 130px;
+}
+
+
+/*footer css*/
+#footer{
+    display: flex;
+    background-color:#333;
+   
+}
+#footer a{
+    float:left;
+    display:block;
+    color: white;
+    text-align:center;
+    text-decoration: none;
+    padding: 14px 20px; 
+}
+#footer .flex-align-right{
+    margin-left: auto;
+}
+#footer a:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+/*index media query*/
+@media (max-width:550px){
+     .sm-handle a{
+    display: flex;
+    font-size: 1.4rem;
+    }
+
+    section h2 span{
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .profile-name{
+        font: 1rem;
+        letter-spacing:0px;
+    }
+
+    #section-1 .carousel{
+        height: 350;
+    }
+
+    
+}
+
+@media (max-width:850px){
+    #footer{
+        flex-direction: column;
+    }
+    #footer .flex-align-right{
+       text-align: center;
+        margin-left: 10px;
+    }
+}
+
+
+/*contact form media query*/
+ 
+@media (max-width: 991.98px) { 
+    .text-danger{
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+}
+
+ 
+
+
+

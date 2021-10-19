@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!--flickity carousel link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--awesome font icon telegram youtube spinner-->
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <!--css link-->
+  <title> smart dshing details | home</title>
+
+
+</head>
+
+<body>
+  <header>
+    <h1>SMART DASHING DETAILS</h1>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <a class="navbar-brand" href="#">sDetails</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"> Topics </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#section-1">Internships video</a>
+            <a class="dropdown-item" href="#section-2">onlile earn money videos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#about">Support</a>
+            <a class="dropdown-item" href="contact.html">write for us</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html"> Contact Us</a>
+        </li>
+
+
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+      <div class="mx-2">
+        <button class="btn btn-danger " data-toggle="modal" data-target="#loginModal">Login</button>
+        <button class="btn btn-danger " data-toggle="modal" data-target="#signupModal">SignUp</button>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!--Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger" id="loginModalLabel">Login to Smart Dashing Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group  text-primary">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter Email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group text-primary ">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label text-success" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-danger">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--SignUp Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-danger" id="signupModalLabel">Creat New Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group text-primary">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter Email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group text-primary">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder=" Enter Password">
+            </div>
+            <div class="form-group text-primary">
+              <label for="cexampleInputPassword1"> Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1"
+                placeholder=" Enter Confirm Password">
+            </div>
+
+            <button type="submit" class="btn btn-danger">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade   " data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="videos/photo10.jpeg" width="100" height="300" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to Smart Dashing Details</h2>
+            <p>Online Internships news, development and trends.</p>
+            <button class="btn btn-danger">Technology</button>
+            <button class="btn btn-primary">Internships</button>
+            <button class="btn btn-success"> Tech Fun</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="videos/photo9.jpeg" width="100" height="300" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to Smart Dashing Details</h2>
+            <p>Online Internships news, development and trends.</p>
+            <button class="btn btn-danger">Technology</button>
+            <button class="btn btn-primary">Internships</button>
+            <button class="btn btn-success"> Tech Fun</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src=" videos/photo4.jpeg" width="100" height="300" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Welcome to Smart Dashing Details</h2>
+            <p>Online Internships news, development and trends.</p>
+            <button class="btn btn-danger">Technology</button>
+            <button class="btn btn-primary">Internships</button>
+            <button class="btn btn-success"> Tech Fun</button>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <section id="section-1">
+      <h2> <span>online free courses & internships </span></h2>
+      <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <!--use the flickity carousel site--> 
+        <div class="carousel-cell"><video class="" src="videos/great learning app.mp4" width="80%" controls loop
+            poster="videos/great learning.jpg"> </video></div>
+        <div class="carousel-cell"><video src="videos/internshala student partner.mp4" width="70%" controls loop
+            poster="videos/internshala.jpg"></div>
+        <div class="carousel-cell"><video src="videos/short term internships.MP4" width="80%" controls loop
+            poster="videos/short.JPG"> </video></div>
+      </div>
+
+    </section>
+    <section id="section-2">
+      <h2> <span> Online earn money </span></h2>
+      <!-- Flickity HTML init -->
+      <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell"> <video src="videos/internshala student partner.mp4" width="70%" controls loop
+            poster="videos/partner.jpg"> </video></div>
+        <div class="carousel-cell"> <video src="videos/earn money freelancing.mp4" width="60%" controls loop
+            poster="videos/freelancing.jpg"> </video></div>
+      </div>
+    </section>
+    <br>
+    <section>
+      <h2> <span>Our website:</span></h2>
+      <iframe src="https://dashing-details.blogspot.com/" fhrameborder="1"  ></iframe>
+    </section>
+    <section id="about">
+      <h2> <span> our community </span></h2>
+      <img class="profile-img bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+        src="videos/main.jpg" alt="" width="200">
+      <h3 class="profile-name">smart dashing details</h3>
+      <div class="sm-handle">
+        <a href="https://dashing-details.blogspot.com/" target="blank" rel="noopener noreferrer" class="web"><i
+            class="fa fa-spinner fa-pulse fa-lg web"></i>Website </a> &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://youtube.com/channel/UCg6ZTJklnsbDrEqy_8hTf9w" target="blank" rel="noopener noreferrer"
+          class="yt-handle"><i class="fa fa-youtube  fa-lg yt-handle"></i> Youtube </a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://t.me/joinchat/UtWT9wxXwEM1NDM1" target="blank" rel="noopener noreferrer" class="te-handle"> <i
+            class="fa fa-telegram fa-lg te-handle"></i>Telegram </a>
+        <!--fa-lg means: icon size increase-->
+      </div>
+      <br>
+      <h4>Here you will get dashing details like internships, technology-related courses, online learning free
+        courses, and unique details. You can check and apply.</h4>
+        <br>
+        <br>
+    </section>
+   
+  </main>
+
+  <footer id="footer">
+    <a href="#">FAQ</a>
+    <a href="contact.html">contact us</a>
+    <a href="#">term & condition</a>
+    <a href="#">privacy policy</a>
+    <a href="#">refund policy</a>
+    <a class="flex-align-right" href="#">&copy; 2021 | smart dashing details</a>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+  <!--java script link: flickity carousel-->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+
+
+</html>
